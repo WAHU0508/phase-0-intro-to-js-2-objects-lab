@@ -3,6 +3,7 @@ const employee = {
     name: "Kouvr James",
     streetAddress: "3614 NY",
 };
+//function1
 function updateEmployeeWithKeyAndValue(obj, key, value) {
     const newobj = {...obj };
     newobj[key] = value;
@@ -11,6 +12,7 @@ function updateEmployeeWithKeyAndValue(obj, key, value) {
 const update1 = updateEmployeeWithKeyAndValue(employee, "streetAddress", "11 Broadway");
 console.log(update1);
 
+//function2
 function destructivelyUpdateEmployeeWithKeyAndValue(obj, key, value) {
     obj[key] = value;
     return obj;
@@ -19,6 +21,7 @@ const update2 = destructivelyUpdateEmployeeWithKeyAndValue(employee, "streetAddr
 console.log(update2);
 console.log(employee);
 
+//function3
 function deleteFromEmployeeByKey() {
     const newObj = {...employee}
     delete newObj.name;
@@ -31,6 +34,7 @@ console.log(update3.name);
 console.log(employee);
 console.log(update3);
 
+//funtion4
 function destructivelyDeleteFromEmployeeByKey() {
     delete employee.name;
     return employee;
